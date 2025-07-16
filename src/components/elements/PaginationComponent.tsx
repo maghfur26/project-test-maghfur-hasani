@@ -20,11 +20,24 @@ const PaginationComponent = ({
         onChange={onChange}
         variant="outlined"
         shape="rounded"
-        color="primary"
         siblingCount={1}
         boundaryCount={1}
         showFirstButton
         showLastButton
+        sx={{
+          "& .MuiPaginationItem-root": {
+            color: "black", 
+            borderColor: "black", 
+          },
+          "& .Mui-selected": {
+            backgroundColor: "orange",
+            color: "white",
+            borderColor: "orange",
+            "&:hover": {
+              backgroundColor: "#e69500",
+            },
+          },
+        }}
       />
     </Stack>
   );
