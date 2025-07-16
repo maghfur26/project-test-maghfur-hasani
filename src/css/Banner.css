@@ -1,0 +1,37 @@
+.banner-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: relative;
+  height: 500px;
+}
+
+.banner-image {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 0.3s ease-out;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-out;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.banner-subtitle {
+  font-size: 1.2rem;
+}
